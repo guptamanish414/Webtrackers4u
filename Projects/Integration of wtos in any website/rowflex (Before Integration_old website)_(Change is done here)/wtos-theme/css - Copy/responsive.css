@@ -1,0 +1,80 @@
+@media screen and (max-width: 1199px){
+.nav li a{padding: 10px 18px;}
+.welcome_section .left_site .block .image-grupe li img{ width:191px;}
+.welcome_section .right_site .search_box .valuation_image { margin: 31px 0 0 0;}
+.welcome_section .right_site .block { padding: 10px 10px;}
+.top_box .block{ min-height:331px;}
+
+@media screen and (max-width: 991px){
+	.nav{ margin:40px -15px 0 -15px;}
+	.nav > li::after{ width:0;}
+	.active {
+	display: block;
+	}
+	.nav > li.hover a{background: #9d1d21;}
+	.nav li ul{ padding-left:8px;}
+	.nav li li a{}
+	.nav > li {
+	float: none;
+	}
+	.nav > li > .parent {
+	background-position: 95% 50%;
+	}
+	.nav li li .parent {
+	background-image: url("images/downArrow.png");
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	}
+	.nav ul {
+	display: block;
+	width: 100%;
+	}
+	.nav > li.hover > ul , .nav li li.hover ul {
+	position: static;
+	}
+	
+	.welcome_section .left_site .block .image-grupe li img {width: 101px;}
+	.services_top{ margin:30px 0 0 0; }
+
+	}
+
+
+@media screen and (max-width: 995px){
+	.header_top .left_site{ margin-top:13px;}
+	.header_top .left_site .logo img{ width:115px;}
+	.header_top .left_site .logo_text {margin: 0px 0 0 15px;}
+	.header_top .left_site .logo_text .block {padding: 8px 0 8px 12px;}
+	.header_top .left_site .logo_text h1{font-size: 20px; margin: 0 0 4px 0;}
+	.header_top .left_site .logo_text h2{font-size: 17px;}
+	.header_top .right_site .contact_info {margin: 0px 10px 0 0;}
+	.header_top .right_site .contact_info li img{ width:25px;}
+	.header_top .right_site .contact_info li h3{font-size: 18px;}
+	.header_top .right_site .soc_ico li img{ width:25px;}
+	
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+
+}
+@media screen and (max-width: 700px){
+	.header_top{ text-align:center;}
+	.header_top .left_site{ margin:0; width:100%;}
+	.header_top .right_site{ width:100%;}
+	.header_top .right_site .contact_info{ width:100%; float:none;}
+	.header_top .right_site .soc_ico{ float:none;}
+	.header_top .right_site .soc_ico li{ display:inline-block;}
+	.header_top .right_site .contact_info li{ display:inline-block; margin:0 10px;}
+	.header_top .left_site .logo_text{ float:none; margin:0;}
+	.header_top .left_site .logo_text .block{ border-left:none;}
+	.header_top .left_site .logo{ float:none;}
+	
+	
+	
+	
+	
+	
+	}

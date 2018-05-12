@@ -1,0 +1,241 @@
+.appWidth{ width:100%; min-height:700px;}
+
+.btnStyle{ background-color:#E4E1DD;  border: 1px solid #FFFFFF; border-bottom:#A3A3A3 1px solid; border-right:1px solid #A3A3A3;}
+
+.iconsLinks{ height:65px;  width:100%; margin:0px; }
+
+.ViewPort{ height:100%; width:100%; float:left; margin:0px; border: 1px solid #FFFFFF;  background-color:#F8F8F8; border-top:#A3A3A3 1px solid; border-left:1px solid #A3A3A3; padding:3px;}
+
+.welcome{ height:18px; width:100%; padding:0px; color:#FDFDFD; font-size:14px; font-weight:bold;text-shadow: 1px 1px 1px rgba(0,0,0,1); text-align:center;}
+
+
+
+
+
+.cclear{ clear:both; height:1px;}
+
+/*.btnaa{ height:28px; width:58px; margin:10px; padding-top:35px; padding-left:3px; cursor:pointer; text-decoration:none; text-align:center; vertical-align:text-bottom;border: 1px solid #E4E1DD; float:left;}*/
+
+.btnaa{ height:25px; width:66px; margin: 2px 2px 2px 1px; padding-top:35px; padding-left:2px; cursor:pointer; text-decoration:none; text-align:center; vertical-align:text-bottom;border: 1px solid #E4E1DD; float:left;}
+
+.abtnaa{ text-decoration:none;}
+
+.btnaa:hover{  border: 1px solid #FFFFFF; border-bottom:#333333 1px solid; border-right:1px solid #333333; color:#FF6600; }
+
+
+
+
+
+
+
+
+
+
+
+.pageHead{ color:#000000; font-style:italic; font-size:16px; font-weight:bold; padding:10px 0px 0px 50px; height:30px; width:230px; margin:0px;}
+
+ 
+
+.calender{border:0px solid #E2E2E2; color:#2C2C2C;}
+
+.calender td{ border-right:0px solid #E2E2E2;border-bottom:0px solid #E2E2E2; height:20px; padding:1px; cursor:pointer; }
+
+
+
+.calenderDiary{border:1px solid #E2E2E2; color:#2C2C2C;}
+
+.calenderDiary td{ border-right:1px solid #E2E2E2;border-bottom:1px solid #E2E2E2; height:25px; padding:0px; position:relative;}
+
+
+
+.noBorder{ margin:5px;border:1px solid #F9F9F9; color:#2C2C2C;}
+
+ .noBorder td{ padding-left:1px;border-right:1px solid #F9F9F9;border-bottom:1px solid #F9F9F9;cursor:pointer;}
+
+.noBorder tr:hover{ background:#FFFFAE;}
+
+/*.listArea{margin-top:5px; height:450px; overflow-y:scroll; background:#FFFFFF; border-left:1px solid #666666; border-top:1px solid #666666; }*/
+
+.listArea{margin-top:5px; height:450px; overflow-y:scroll;  }
+
+ .bbold{ font-size:14px; font-weight:bold;  }
+
+ .matchprop td{ vertical-align:top;}
+
+.memappolist{}
+
+.memappolist:hover{ background-color:#FFFF99;}
+
+.deleteAppo{ color:#FF0000; cursor:pointer;}
+
+.appoDate{ color:#6633CC;}
+
+.submit{ margin:5px;}
+
+
+
+ .wtpopup{ display:none;}
+
+  .wtpopupInner{ }  /* */
+
+  .opener{ cursor:pointer; padding:3px 2px 2px 5px;; background:#009BE6; color:#FFFFFF;-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:0px ; margin:0px 0px 0px 0px; width:auto; float:left; font-weight:bold;
+
+   
+
+  
+
+  }
+
+  .opener:hover{ background-color:#CC0000;}
+
+  
+
+  
+
+  
+
+  .popbutton{ cursor:pointer; opacity:0.8;}
+
+  .popbutton:hover{ opacity:1; border-bottom:1px solid #666666;}
+
+  
+
+ /* calendar*/
+
+ .calenderScroll{height:460px; overflow-y:scroll; padding-top:0px;}
+
+  .calenderApplicantView{ width:100%; }
+
+  .calenderDiaryView{ width:100%; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; }
+
+
+
+ .calenderApplicantView .slot{   position:absolute;
+
+-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px; border:#999999 1px solid; background:#FFFFFF; padding:2px; float:left; opacity:0.6; color:#000000; margin-top:-12px; width:195px; font-size:10px; cursor:pointer;} /*width:460px;*/
+
+ .calenderApplicantView .appoMargin1{ margin-left:0px;}
+
+  .calenderApplicantView .appoMargin2{ margin-left:220px;}
+
+  
+
+  .calenderDiaryView .slot{   position:absolute;
+
+-moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px; border:#999999 1px solid; background:#FFFFFF; padding:2px; float:left; opacity:0.6; color:#000000; margin-top:-12px; width:380px; font-size:10px; cursor:pointer;} /*width:460px;*/
+
+ .calenderDiaryView .appoMargin1{ margin-left:0px;}
+
+  .calenderDiaryView .appoMargin2{ margin-left:390px;}
+
+
+
+
+
+ .calenderDiaryView .slot:hover{ background-color:#FFFFEC;}
+
+
+
+ 
+
+
+
+
+
+.calenderDiaryView .colorOrange{ background-color:#FF9900;}
+
+.calenderDiaryView .colorYellow{ background-color:#FFFF33;}
+
+.calenderDiaryView .colorBlue{ background-color:#33CCFF;}
+
+.calenderDiaryView .colorGreen{ background-color:#33FF66;}
+
+
+
+
+
+.calenderApplicantView .colorOrange{ background-color:#FF9900;}
+
+.calenderApplicantView .colorYellow{ background-color:#FFFF33;}
+
+.calenderApplicantView .colorBlue{ background-color:#33CCFF;}
+
+.calenderDiaryView .colorGreen{ background-color:#33FF66;}
+
+
+
+.colorOrange{ background-color:#FF9900;}
+
+ .colorYellow{ background-color:#FFFF33;}
+
+.colorBlue{ background-color:#33CCFF;}
+
+.colorGreen{ background-color:#33FF66;}
+
+
+
+.colorBoxDiv{ padding:5px; margin:10px;}
+
+	.colorBox{ padding:5px; margin:5px; height:15px; width:80px; border:#CCCCCC solid 1px;}
+
+
+
+.slotMoreData{}
+
+.calenderApplicantView .slotMoreData{ display:none;}
+
+
+
+
+
+.apptwo{  position:relative;left:200;}
+
+
+
+.duration15{height:20px;}
+
+.duration30{height:45px;}
+
+.duration45{height:70px;}
+
+.duration60{height:95px;}
+
+.duration75{height:120px;}
+
+.duration90{height:145px;}
+
+.duration105{height:170px;}
+
+.duration120{height:195px;}
+
+.duration135{height:220px;}
+
+
+
+.timeDiv{ margin-top:-20px; background:#FFFFFF; padding-left:5px;}
+
+
+
+.appointform{ float:left; width:500px;  }
+
+.appointCal{ float:left; width:555px;  }
+
+.viewTypeStyle{  padding:1px; border:1px solid #FFFFFF; margin-top:1px;-moz-border-radius:5px; -webkit-border-radius:5px;border-radius:5px;}
+
+ .loadImage{ height:auto; width:auto; background-color:#FFFF00; font-size:14px;-moz-border-radius:5px; -webkit-border-radius:5px;border-radius:5px; padding:8px; width:200px; -webkit-box-shadow: 3px 3px 5px 6px #ccc;  
+
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  
+
+  box-shadow:         3px 3px 5px 6px #ccc; }  
+
+ .loadText{ height:auto; width:auto; float:left; font-size:15px; color:#FF3300;}
+
+ .div_busy_class{ width:300px; height:0px; position:fixed; top:120px; left:40%; z-index:100; }
+
+ .pageButons .submit{  -moz-border-radius:4px; -webkit-border-radius:4px;border-radius:4px;}
+
+ 
+
+ .shadows{ border:1px solid #F7F7F7; border-radius: 5px;
+
+    box-shadow: 0 0 5px #CCCCCC ;}

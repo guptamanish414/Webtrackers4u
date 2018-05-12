@@ -1,0 +1,91 @@
+
+<h3><u>Java Script</u></h3>
+<html>
+<head>
+<script src="JavaScript Basics.js"></script>
+</head>
+
+<body>
+
+<br/>
+This is html body text
+<br/>
+
+<script type="text/javascript">
+document.write("This is Internal JavaScript text");
+</script>
+
+<br/>
+<h3><u>Java Script function</u></h3>
+<script type="text/javascript">
+function fun1(){
+	//alert("this is function call");
+}
+fun1();
+</script>
+
+<br/>
+<h3><u>Java Script function with parameters</u></h3>
+<script type="text/javascript">
+
+function fun2(name){
+	document.write(name + " is my friend");
+}
+fun2("pbc");
+</script>
+
+<br/>
+<h3><u>Java Script function call from another function</u></h3>
+<script type="text/javascript">
+function funA(){
+	document.write("This is function A");
+}
+function funB(){
+	funA();
+}
+funB();
+</script>
+
+<br/>
+<h3><u>Java Script loop</u></h3>
+<p id="demo"></p>
+<script type="text/javascript">
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<br/>
+<h3><u>Java Script for loop</u></h3>
+<p id="myloop"></p>
+<script>
+function myFunction() {
+    var text = "";
+    var i;
+    for (i = 0; i < 5; i++) {
+        text += "The number is " + i + "<br>";
+    }
+    document.getElementById("myloop").innerHTML = text;
+}
+myFunction();
+</script>
+
+
+<br/>
+<h3><u>Java Script conditional loop</u></h3>
+<script>
+var a=0;
+if (a != 0){
+    function foo() {
+        alert("FOO");
+    }
+}
+foo();
+</script>
+
+</body>
+</html>

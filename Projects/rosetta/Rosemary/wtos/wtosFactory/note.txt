@@ -1,0 +1,36 @@
+CREATE TABLE `admin` (
+  `adminId` int(10) NOT NULL auto_increment,
+  `name` varchar(50) NOT NULL,
+  `adminType` varchar(20) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `address` text NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `mobileNo` int(10) NOT NULL,
+  `billingAccess` tinyint(1) NOT NULL,
+  `serviceAccess` tinyint(1) NOT NULL,
+  `addedDate` datetime NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  PRIMARY KEY  (`adminId`)
+)    ;
+
+-- 
+-- Dumping data for table `admin`
+-- 
+
+INSERT INTO `admin` (`adminId`, `name`, `adminType`, `username`, `password`, `address`, `email`, `mobileNo`, `billingAccess`, `serviceAccess`, `addedDate`, `active`) VALUES 
+(1, 'Mizanur', 'Super Admin', '123', '123', 'NP 210 saltlake sector V', '456456456', 0, 1, 1, '2012-07-23 11:41:54', 1);
+
+CREATE TABLE `settings` (
+  `settingsId` int(11) NOT NULL auto_increment,
+  `keyword` varchar(200) NOT NULL,
+  `value` varchar(255) NOT NULL,
+  PRIMARY KEY  (`settingsId`)
+)   ;
+
+-- 
+-- Dumping data for table `settings`
+-- 
+
+INSERT INTO `settings` (`settingsId`, `keyword`, `value`) VALUES 
+(1, 'email', 'admin@webtrackers.co.in');

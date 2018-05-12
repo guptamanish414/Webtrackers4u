@@ -1,0 +1,154 @@
+1. auto complete
+
+/*  model   function reff 
+
+// $os->now($format='Y-m-d h:i:s');
+// $os->getRowById($table="",$idfields="",$id='');
+// $os->getByFld($table,$fld,$fldVal,$getfld='');
+// $os->options($keyField,$valField,$tName,$where='',$orderby='',$limit='');
+// $os->optionsHTML('','adminId','name','admin'); 
+// $os-> optionsHTML($selectedValue,$keyField,$valField,$tName,$where='',$orderby='',$limit='')
+// $os->getSettings('1234');
+// $os->quickDatabaseReset();
+// $os->get_admin($where='',$orderby='',$limit='',$filds='');   ### admin = table name
+// $os->save_admin($data,$primeryField='',$primeryFieldVal='');### admin = table name
+// $os->pagingResult($query='',$showPerPage=10);
+// $os->save($table,$data,$primeryField,$primeryFieldVal)
+// $os->deleteRow($table,$fld,$fldVal)
+// $os->spc($v=1)
+// $os->getT($tables="",$fields="",$where="",$orderby='',$limit='')
+// $os->getMe($q)
+// $os->dateC('30/02/1998','dmy','mm/yyyy/dd');
+// $os->dFormatTN($timestamp) 
+// $os->dFormatNT($normaldate)
+// $os->chunkSplit($array,$no)
+// $os->CurrentPageName()
+// $os->UploadPhoto($name,$path) 
+// $os->processLogin($userField,$passwordField,$tablename)
+// $os->sendMail($to,$from,$fromName,$subj,$body )
+// $os->dmyToDB($date,$extra='')
+// $os->DBToDmy($date)
+// $os->monthArr($int='')
+// $os->save($primeryTable,$dataToSave,$primeryField,$rowId);
+// $os->setNget('active',$primeryTable); 
+// $export->download('filename','content str'));
+- $active= $os->setNget('active',$primeryTable);  //for session set
+- $andActive=($active!=-1 && $active!='' )? " and active='$active'":'';
+@ $name_search=$os->setNget('name_search',$primeryTable);
+@ $andname=($name_search!='' )?" and username LIKE '%$name_search%'":'';
+@@ $os-> andField($getParam,$field,$primeryTable,$willCard='=',$resetValue='');
+    $andUser=  $os->andField('userId_search','userId',$primeryTable,$willCard='%',$resetValue='');
+
+//  $os-> rs($query);   //passes through magic 
+
+//  $os-> mq($query);    // mysql query
+//  $os-> mfa($rs);    // mysql fetch assoc
+
+
+
+
+
+#############getCount($table,$where='')
+########getCountVal($table,$field,$fieldVal)
+#########  dateSearch($date_searchVal,$fldName)
+
+<select>
+<? $os-> optionsHTML($selectedValue,$keyField,$valField,$tName,$where='',$orderby='',$limit=''); ?>
+</select>
+
+// $os->searchByDate($dateField ,$sDate,$eDate)
+
+//   $os->StatusDropdown($arStatus,$selectedValue)  // only option 
+
+$os->editAreaField($value,$table,$editFld,$idFld,$idVal , $inputNameID='changeStatusDD',$extraParams='class="tArea" ')
+$os->editTextField($value,$table,$editFld,$idFld,$idVal , $inputNameID='changeStatusDD',$extraParams='class="tField" ')
+$os->changeStatusDD($statusArr,$selected,$table,$satusfld,$idFld,$idVal,$colorStatus)
+
+*/
+------------------------------
+
+ob_start(); 
+$recordPerPage= $os->recordPerPageDD();
+$recordPerPageDDS=ob_get_clean();
+
+ <a onclick="os.quickAdd(editPage,selectDDId,keyFld,ValFld,Table,where,orderby,limit,popupWidth,popupHeight)" href="javascript:void(0);">   New News </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////
+edit page 
+<input type="button" class="submit popupHide"  value="Cancel" 
+									onclick="javascript:window.location='<? echo $listPAGE ?>.php';" />
+
+
+<form  action="<? echo $listPAGE ?>.php" method="post" id="recordEditForm"   enctype="multipart/form-data">
+
+
+
+add page 
+$insertedId=$os->save($primeryTable,$dataToSave,$primeryField,$rowId);
+$os->popUpSaveAssign($insertedId);	
+
+///  code changes for popup add /edit/ delete
+
+1. added new function to modeltables addParams(), hideTopLeft() and addPopUp()  modified
+2. form action changes to 
+	<form  action="<? echo $listPAGEUrl ?>" method="post"   enctype="multipart/form-data"  id="recordEditForm"  >
+
+3. listing page line modification 
+ $DivIds['EDITPAGE']=$site['url'].$DivIds['AJAXPAGE'].'.php?'.$os->addParams(array('hideTopLeft'),'').'editRowId=';
+$listPAGEUrl=$DivIds['AJAXPAGE'].'.php?'.$os->addParams(array('hideTopLeft','newsId'),'');
+
+
+4. cancel button onclick script modified
+<input type="button" class="submit  popupHide"  value="Cancel" 	onclick="os.jump('<?php echo $listPAGEUrl ?>');" />
+
+5. popup code <a href="javascript:void(0)" onclick="popUpWindow('newsimg_f.php?hideTopLeft=1&newsId=<?php echo  $DivIds['EDITID']; ?>', 50, 50, 600, 500)">Imges</a>
+
+
+6. javascript search/reset link changed
+window.location='<?php echo $listPAGEUrl; ?>newsImgId='+newsImgIdV +'&title='+titleV +'&newsId='+newsIdV +'&';
+window.location='<?php echo $listPAGEUrl; ?>newsImgId=&title=&newsId=&';	
+
+
+7. added listpage variable to top of listpage
+     $listPAGE='newsimg_f';
+8. list page  reset link modified;added class
+
+<a href="javascript:void(0)" class="searchReset" onclick="javascript:searchReset()">Reset</a>
+
+7. while programming please change value of $dataToSave['parent']=varP('parent'); 
+
+system validate 
+
+added $os->validateWtos(); at top backens 
+setting file and database changed
+
+
+////////////////////////  language box /////////////////////
+
+
+getLang(),
+langBox($key,$langId='') 
+echoLangBox($key,$langId='') 
+echoWtBox($key,$langId='')
+wtBox($key,$langId='') 
+echowtBox($key,$langId='')
+// if system key u can set same accesskey
+// for cms and other you must set different access key
+// reset $_session[wtbox]  after swiching language
+
+
+
+<div onclick="os.setLangId('2','<? echo $site['url'].'application/ajxSysytem.php' ?>')">bengali</div> <div onclick="os.setLangId('1','<? echo $site['url'].'application/ajxSysytem.php' ?>')">Eng</div>

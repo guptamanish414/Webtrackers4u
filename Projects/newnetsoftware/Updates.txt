@@ -1,0 +1,4 @@
+---------One column added to contactus table ----------
+ALTER TABLE `contactus` ADD `companyName` VARCHAR(200) NOT NULL AFTER `mobile`;
+ALTER TABLE `pressrelease` CHANGE `details` `details` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+

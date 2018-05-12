@@ -1,0 +1,29 @@
+<? 
+$os->wtosHome =$os->get_pagecontent("active=1 and pagecontentId='".$os->getSettings('homePageId')."'" );
+$os->wtospage=$os->wtosHome[0];
+$pageBody=preg_replace('/src=\".*?wtos-images/','src="'.$site['url']."wtos-images",stripslashes($os->wtospage['content']));
+$pageBody=$os->replaceWtBox($pageBody);
+echo stripslashes($os->wtospage['pageCss']);
+?>
+
+<!--   center area  666666666666666--->
+          <? if($os->wtospage['image']!='' && $os->wtospage['showImage']==1){ ?>
+		 
+		  <div class="pageImage">
+		  <img src="<? echo $site['url']; ?><? echo $os->wtospage['image'] ?>" title="<? echo $os->wtospage['heading'] ?>" alt="<? echo $os->wtospage['heading'] ?>"  />
+		  </div>
+		  <div style="clear:both; height:1px;">&nbsp;</div>
+		  <?  } ?>
+		  
+		  <h1 ><? echo $os->wtospage['heading'] ?></h1> 
+	
+		<? if($os->wtospage['preInclude']!='' && file_exists(inclPath('application').'/'.$os->wtospage['preInclude']) ){ ?> 
+		   <? include(inclPath('application').'/'.$os->wtospage['preInclude']); ?>
+		<? } ?>					
+		<? echo $pageBody; ?>
+		<? if($os->wtospage['postInclude']!='' && file_exists(inclPath('application').'/'.$os->wtospage['postInclude']) ){ ?> 
+		  <? include(inclPath('application').'/'.$os->wtospage['postInclude']); ?>
+		<? } ?>		
+				
+<!--   center area  666666666666666 end--->				
+			 

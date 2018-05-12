@@ -1,0 +1,75 @@
+<?php 
+#------ site configuration ---------#  
+##e## editable area 
+
+$site['droot']=$_SERVER[DOCUMENT_ROOT];
+$site['devSiteURL']='http://'.$_SERVER['SERVER_NAME'];
+
+if($_SERVER['SERVER_ADDR']!='127.0.0.1')
+{  
+   
+	 
+	$devFolder='';	    ##e## example 'wtos/' 
+	
+	$site['host']="localhost";  
+	$site['user']="technoen_vironen";   
+	$site['pass']="#webtrackers##";   
+	$site['db']="technoen_vironengineers";  
+	
+
+}
+else
+{
+	$devFolder='WTF_devFolder';	  ##e## example 'wtos/'
+	 
+	
+	$site['host']="localhost";
+	$site['user']="root";
+	$site['pass']="";
+	$site['db']="WTF_database";
+
+	 
+}
+ 
+
+
+
+
+$site['siteTitle']='';
+$site['siteHeading']=$site['siteTitle'];
+$site['keywords']='';
+$site['description']=''; 
+ 
+ 
+ #-----------------------------  non editable area -----------------------------#
+ 
+$devSiteURL=$site['devSiteURL']; 
+$site['root']=$site['droot']."/".$devFolder;      
+$site['url']=$devSiteURL.'/'.$devFolder; 
+$site['imgPath']=$site['droot']."/".$devFolder.'';
+$site['theme']='wtos-theme';
+$site['themePath']=$site['url'].$site['theme']."/";
+$site['urlFront']=$site['url'];
+ 
+
+
+
+
+$site['defaultLanguage']="English"; #English
+$site['classes']=$site['root'].'classes';
+$site['language']=$site['root'].'language';
+$site['application']=$site['root'].'application';
+$site['loginKey']=$site['db'];
+$site['shortcut icon']=$site['themePath'].'images/fav.png';
+function inclPath($dir='')
+{
+  global $site;
+  $dir=($dir!='')?$site[$dir]:$site['root'];
+  return $dir;
+}
+
+
+
+
+
+?> 

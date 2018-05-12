@@ -1,0 +1,58 @@
+@media only screen and (max-width: 766px) {
+		.logo {float: none; text-align:center; margin:0 0 10px 0px;}
+		.logo-right { float:none;}
+ }
+ @media only screen and (max-width:1199px) {
+		
+  }
+ 
+@media only screen and (max-width:991px) {
+.social_icons {float: none; margin-top: 2px;text-align:center;}
+.nav{ margin:8px 0 0 0;}
+.nav > li{ margin-right:8px;}
+.about_text_block p{ -webkit-column-count: 1; -moz-column-count: 1;column-count: 1;}
+.nav li .three_colom {margin-left:-200px;}
+}
+ 
+ @media only screen and (max-width:767px) {
+ .footer_block .link_list{ padding:0px 0px 20px 0px}
+.nav li .three_colom {margin-left:0px; min-width:inherit;}
+.nav li .three_colom li{}
+
+.oder_submit .table_scroll{ overflow:auto;}
+.oder_submit .table_scroll .table{ width:500px;}
+ }
+ @media only screen and (max-width: 715px) {
+		.nav-btm p {float: none;margin: 0px; text-align:center;}
+		.nav-btm ul {float: none;margin:5px 0 0 0; padding: 0px; list-style: outside none none; text-align:center;}
+		.login_center{ margin:0px auto 0px auto; width:100%;}
+ }
+ @media only screen and (max-width: 500px) {
+ .prodect_details .contain_wrapper .accordion_info .panel-body table{ width:438px; overflow:auto;}
+ .prodect_details .contain_wrapper .accordion_info .panel-body table tr td{ min-width:150px;}
+ .oder_submit .success_text { font-size:18px; text-align:left;}
+ .oder_submit .sub_tex {font-size: 14px; text-align:left;}
+}
+		
+ }
+ 
+
+  @media only screen and (max-width:360px) {
+  .prodect_gride_home .col-xs-6{ width:100%; float:left;}
+  .prodect_gride_home .images{ text-align:center;}
+  .prodect_gride_home .images img{ display:inline;}
+  .footer_block .col-xs-6{ width:100%; float:none;}
+  
+  .prodect_list_grupe .col-xs-6{ width:100%;}
+  .shorting .short_by{ margin:0px auto; margin-bottom:10px;}
+  .basket_page_right .basket_page_order, .basket_page_left .basket_page_order{ width:100%; float:none;}
+ }
+ 
+  @media only screen and (max-width:360px){
+	  .prodect_gride .images .cata_name{right: 16%;}
+	  padding: 0px 17px;
+	  
+	  
+	  }
+ 
+ 

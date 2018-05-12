@@ -1,0 +1,33 @@
+<?php
+session_start();
+include('coomon.php');
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="shortcut icon" href="<?php echo $site['shortcut icon'];?>" />
+<title><?php echo $site['siteTitle'];?><?php echo $os->getSettings('siteTitle');?><?php echo $os->wtospage['heading'];?></title>
+<meta name="keywords" content="<?php echo $site['keywords'];?> <?php echo $os->getSettings('metaKey');?> <?php echo $os->wtospage['metaTag'];?>   ">
+<meta name="description" content="<?php echo $site['description'];?> <?php echo $os->getSettings('metaDescription');?> <?php echo $os->wtospage['metaDescription'];?> ">
+<?php  
+ #------------js ----------------------#
+ $pagevar[myJs][]=$site['url'].'js/basic.function.js';
+ $pagevar[myJs][]=$site['url'].'js/common.js';
+ 
+ #------------css ----------------------#
+ #$pagevar[myCss][]=$site['url'].'css/common.css';
+ 
+	echo   $os->addCss($pagevar[myCss]); 
+	echo  $os->addJs($pagevar[myJs]); 
+?>
+
+<!--WTF_JS-->
+
+<!--WTF_CSS-->
+
+<?php echo $os->getSettings('Styles'); ?>
+
+<!--WTF_HEADER_EXTRA-->
+
+</head>

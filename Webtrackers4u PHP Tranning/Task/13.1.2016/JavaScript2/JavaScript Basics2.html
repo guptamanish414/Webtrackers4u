@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Java Script Basics 2</title>
+</head>
+
+<body>
+
+<br/>
+<h3><u>Java Script Date</u></h3>
+<p id="d1"></p>
+<script>
+document.getElementById("d1").innerHTML = Date();
+</script>
+
+<br/>
+<h3><u>Java Script Date using object</u></h3>
+<p id="d2"></p>
+<script>
+var d = new Date();
+document.getElementById("d2").innerHTML = d;
+</script>
+
+<br/>
+<h3><u>Java Script Redirect</u></h3>
+<script type="text/javascript">
+<!--
+function Redirect() {
+window.location="http://www.tutorialspoint.com";
+}
+//-->
+</script>
+<form>
+ <input type="button" value="Redirect Me" onclick="Redirect();" />
+</form>
+
+<br/>
+<h3><u>Java Script Array</u></h3>
+<p id="d3"></p>
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("d3").innerHTML = cars;
+</script>
+
+<br/>
+<h3><u>Java Script Objects</u></h3>
+<p id="d4"></p>
+<script>
+var person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+document.getElementById("d4").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+<br/>
+<h3><u>Java Script Alert Box</u></h3>
+<p>Click the button to display an alert box:</p>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+    alert("I am an alert box!");
+}
+</script>
+
+<br/> 
+<h3><u>Java Script confirm boxAlert Box</u></h3>
+<p>Click the button to display a confirm box.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="d5"></p>
+<script>
+function myFunction() {
+    var x;
+    if (confirm("Press a button!") == true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+    document.getElementById("d5").innerHTML = x;
+}
+</script>
+
+<br/> 
+<h3><u>Java Script confirm Prompt Box</u></h3>
+<p>Click the button to demonstrate the prompt box.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="d6"></p>
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "Manish");
+    if (person != null) {
+        document.getElementById("d6").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
+</script>
+</body>
+</html>

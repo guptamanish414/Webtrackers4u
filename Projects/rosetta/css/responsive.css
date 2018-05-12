@@ -1,0 +1,29 @@
+
+@media only screen and (max-width : 1199px) {
+.Contacts .gallery_images { padding: 0px 36px 0px 0px;}
+.Contacts .sosel_icon li { margin-right: 7px;}
+
+}
+@media only screen and (max-width : 991px) {
+.carousel-indicators { bottom: -2px;}
+.author .left_image{ margin-top:30px;}
+
+}
+@media only screen and (max-width :767px) {
+.author .right_text{ text-align:center;}
+.author .left_image{ margin-top:auto; margin-bottom:15px;}
+.author{ padding-left:15px; padding-right:15px;}
+.Contacts .gallery_images {padding: 0px 0px 0px 0px;}
+.dark_chocolate{ padding-left:10px; padding-right:10px;}
+.rosette{padding-left:10px; padding-right:10px;}
+.feedback{padding-left:10px; padding-right:10px;}
+	
+
+}
+@media only screen and (max-width :400px) {
+	.logo { max-width:250px; padding: 19px 0px 0px 10px;}
+    
+}
+
+
+}

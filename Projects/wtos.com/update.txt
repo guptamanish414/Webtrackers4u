@@ -1,0 +1,28 @@
+
+
+
+-18-5-2016----library----------
+added function  function loggedUser()  [applo,payfei]   // updated to 1wtos
+
+ added  function isActiveLogin($field,$valueTocompare)  [payfei]   //  ........
+
+extend function processLogin($userField,$passwordField,$tablename,$condition='') [payfei]   //  ........
+
+
+
+-------------  Need to do  --------------
+...................
+Settings need to add in dashboard
+............................
+var fullDescription=tinyMCE.get("fullDescription").getContent();   
+ tinyMCE.activeEditor.setContent(objMem.fullDescription);
+.......................
+
+login active check
+
+..........................
+email need to change
+..........................
+
+scan virus
+

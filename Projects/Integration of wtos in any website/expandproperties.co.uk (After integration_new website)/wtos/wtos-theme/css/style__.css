@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{margin:0; padding:0; font:11px Verdana, Geneva, sans-serif; color:#000; }
+
+.left{float:left}
+.right{float:right}
+.clear{clear:both}
+
+
+.main{
+/*
+F5F5FA
+8D5FB8
+*/
+
+background: -webkit-gradient(linear, left top, right top, from(#8D5FB8), to(#FCADA9));
+background: -moz-linear-gradient(left top, #8D5FB8, #FCADA9 );
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#8D5FB8, endColorStr=#FCADA9, GradientType=1);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#8D5FB8, endColorstr=#FCADA9, GradientType=1)";
+
+min-height:490px;
+padding-bottom:10px
+}
+  /*
+  .wrapper{width:995px; margin:0 auto}
+   */
+.wrapper{width:95%; margin:0 auto}  
+
+.header{height:10px}
+
+.curvebox{
+background:#FFF; 
+-moz-border-radius:7px; 
+-webkit-border-radius:7px; 
+-moz-box-shadow: 0px 0px 15px #051b1c;
+-webkit-box-shadow: 0px 0px 15px #051b1c;
+box-shadow: 0px 0px 15px #051b1c;
+border:2px solid #3586a3;
+behavior: url(ie-css3.htc); 
+position:relative; 
+z-index:10;
+}
+
+.curvebox .headerimage{background:url(../images/headerbg.png) -1px 0; height:34px}
+.curvebox .buttons-section{background:#f0f0f0; border-bottom:1px solid #e7e7e7; margin-bottom:1px}
+
+.container{margin:0; padding:0; width:100%; border-collapse:collapse;}
+.container .leftside{width:190px; background:#f0f0f0; border-right:1px solid #e7e7e7; vertical-align:top}
+.container .rightside{width:290px; background:#FFF; border-left:1px solid #e7e7e7; vertical-align:top}
+.container .middle{vertical-align:top}
+
+.leftnavigation{margin:0; padding:0}
+.leftnavigation ul{margin:0; padding:0; list-style:none}
+.leftnavigation ul li{display:block; border-bottom:1px solid #FFF}
+.leftnavigation ul li a{padding:8px 10px 8px 30px; display:block; color:#868686; font-weight:bold; text-decoration:none}
+.leftnavigation ul li a:hover{background-color:#a0d4dc; color:#000}
+
+/*.button{margin:0; padding:0; display:block; float:left; color:#FFF; font-weight:bold; font-size:10px;}
+.button span{display:block; float:left; background:url(../images/buttons.png); height:27px; padding-left:20px; line-height:27px}
+.button em{display:block; float:left; background:url(../images/buttons.png) 20px 0; height:27px; width:20px}
+.button:hover span{text-decoration:underline; background:url(../images/hover.png)}
+.button:hover em{background:url(../images/hover.png) 20px 0}*/
+
+.button{margin:0; padding:0;  float:left; display:block; background:#ecedf2; color:#878588; font-weight:bold; text-decoration:none;}
+.button span{display:block; background:url(../images/btnbg.jpg); border:1px solid #104d7a; -moz-border-radius:3px; -webkit-border-radius:3px;  height:22px; padding:0 5px 0 7px; line-height:22px; behavior: url(ie-css3.htc); position:relative; z-index:10;}
+.button input{display:block; background:url(../images/btnbg.jpg); border:1px solid #104d7a; -moz-border-radius:3px; -webkit-border-radius:3px;  height:22px; padding:0 5px 0 7px; line-height:22px; behavior: url(ie-css3.htc); position:relative; z-index:10; color:#878588; font-weight:bold; cursor:pointer}
+.button:active span{background:url(../images/hover.jpg);}
+.button:active input{background:url(../images/hover.jpg);}
+
+.buttons-section{padding:10px}
+.buttons-section a{margin-right:5px; margin-bottom:5px; color:#000; font-weight:bold; text-decoration:none; display:block; line-height:23px; padding-left:21px; float:left; padding-right:2px}
+.buttons-section a:hover{text-decoration:underline}
+.buttons-section a.home{background:url(../images/icons.png) 0 0 no-repeat;}
+.buttons-section a.scheduler{background:url(../images/icons.png) 0 -34px no-repeat; padding-left:25px}
+.buttons-section a.patient{background:url(../images/icons.png) 0 -217px no-repeat;}
+.buttons-section a.chart{background:url(../images/icons.png) 0 -254px no-repeat;}
+.buttons-section a.disease{background:url(../images/icons.png) 0 -295px no-repeat;}
+.buttons-section a.care{background:url(../images/icons.png) 0 -330px no-repeat;}
+.buttons-section a.referral{background:url(../images/icons.png) 0 -370px no-repeat;}
+.buttons-section a.administration{background:url(../images/icons.png) 0 -70px no-repeat;}
+.buttons-section a.editor{background:url(../images/icons.png) 0 -413px no-repeat;}
+.buttons-section a.setup{background:url(../images/icons.png) 0 -465px no-repeat;}
+
+
+.home-ico{background:url(../images/icons.png) 4px 3px no-repeat; }
+.sheduler-ico{background:url(../images/icons.png) 2px -32px no-repeat;}
+.man-ico{background:url(../images/icons.png) 4px -102px no-repeat;}
+.chart-ico{background:url(../images/icons.png) 2px -139px no-repeat;}
+.hl7-ico{background:url(../images/icons.png) 4px -177px no-repeat;}
+
+.form{margin:0; padding:5px 0; border-collapse:collapse}
+.form td{padding:2px; vertical-align:top; font-size:10px}
+.form td.leftside1{width:75px; text-align:right; vertical-align:middle}
+.form td .combobox{width:300px}
+.form .imageprofile{border:1px solid #c7e0e7; width:100px; height:100px; background:#FFF}
+.form .space input{margin-right:7px}
+.form .formfield p{margin:0; padding:0; float:left}
+.form .formfield p.bigfield label{width:180px; line-height:17px}
+.form .formfield p input{float:left}
+.form .formfield p select{float:left}
+.form .formfield p label{float:left; display:block; margin-top:3px; padding-right:6px; }
+.form .formfield p span{float:left; padding:0 5px; display:block; line-height:20px}
+.form .textbox{width:292px}
+
+.headertext{background:#d4eaf0; padding:5px 10px; font-size:11px; font-weight:bold; color:#457885; margin-bottom:10px}
+
+
+.combobox{-moz-border-radius:4px; -webkit-border-radius:4px; border:1px solid #c7e0e7; padding:2px 3px; font:10px Verdana, Geneva, sans-serif; margin:0; behavior: url(ie-css3.htc); position:relative; z-index:10;}
+.textbox{-moz-border-radius:4px; -webkit-border-radius:4px; border:1px solid #c7e0e7; padding:3px 3px; font:10px Verdana, Geneva, sans-serif; margin:0; behavior: url(ie-css3.htc); position:relative; z-index:10;}
+.button1{background:#DDD; border:1px solid #777; width:102px; cursor:pointer}
+.button2{background:#d4eaf0; -moz-border-radius:4px; -webkit-border-radius:4px; border:1px solid #b1d1da; height:25px; width:165px; font:bold 10px Verdana, Geneva, sans-serif; color:#6896a3; behavior: url(ie-css3.htc); position:relative; z-index:10;}
+.button2:hover{text-decoration:underline}
+
+.buttons-section1{padding-bottom:5px}
+.buttons-section1 input{margin-bottom:3px; cursor:pointer}
+
+.form1{margin:0; padding:5px 0 8px 0}
+.form1 table{border-collapse:collapse}
+.form1 table td{padding:2px;}
+
+.footerbutton{margin:0; padding:0; height:30px}
+.footerbutton .button{margin:4px}
+
+.breadcrumb{padding:5px}
+.breadcrumb a{padding-right:2px; color:#069; text-decoration:none}
+.breadcrumb a:hover{text-decoration:underline}
+.breadcrumb span{padding-right:2px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.headertextsection{margin:0; padding:0}
+.headertextsection label{padding:0 10px; float:left; display:block;}
+.headertextsection span{padding:0 20px 0 0; font-weight:normal; display:block; float:left; width:120px}
+.headertextsection .space1{margin-bottom:10px}
+
+.tablelist{margin:0; padding:0}
+.tablelist ul{margin:0; padding:0; list-style:none}
+.tablelist ul li{float:left; width:380px; border:1px solid #9ec4ce; margin:0 5px 10px 5px; box-shadow:0 0 5px #DDD}
+.tablelist ul li .scroll{height:130px; overflow:auto}
+.tablelist ul li .listheader{background:#d4eaf0; height:25px; padding:3px 10px; color:#457885; font-size:11px; font-weight:bold; line-height:25px}
+.tablelist ul li .listheader a{float:right; color:#888; font-size:10px; text-decoration:none; background:url(../images/btnbg.jpg); display:block; height:22px; padding:0 8px; margin-left:2px; border:1px solid #AAA; line-height:22px}
+.tablelist ul li table{width:100%; border-collapse:collapse}
+.tablelist ul li table th{
+background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#EEE));
+background: -moz-linear-gradient(top, #FFF, #EEE);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#EEEEEEEE);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#EEEEEEEE)";	
+padding:5px 3px;
+color:#777;
+border:1px solid #DDD;
+}
+
+.tablelist ul li table td{
+padding:5px 3px;
+color:#777;
+border:1px solid #DDD;
+}
+
+
+
+/* added by mizanur */
+/*
+.buttonS{ border:#FF9900 1px solid; color:#FFFFFF; 	font-weight:bold; cursor:pointer;padding:3px; background:#CC9900;}
+.buttonSa a{ border:#FF9900 1px solid; 
+color:#FFFFFF; font-size:10px;
+font-weight:bold; 
+cursor:pointer;padding:1px; background:#000066; padding-left:10px; padding-right:10px; 
+text-decoration:none;
+
+
+}
+
+.buttonSa a:hover{ border:#FF9900 1px solid; 
+color:#FFFFFF; font-size:10px;
+font-weight:bold; 
+cursor:pointer;padding:1px; background:#FF3300; padding-left:10px; padding-right:10px; 
+text-decoration:none;
+
+
+}
+
+
+
+
+.submit{ border:#FF9900 1px solid; 
+color:#FFFFFF; font-size:15px;
+font-weight:bold; 
+cursor:pointer;padding:1px; background:#000066; padding-left:10px; padding-right:10px; 
+text-decoration:none;
+
+
+}
+
+
+*/
+
+
+
+
+.FlashMessageDiv{
+position:fixed; 
+left:35%; top:0; 
+background:#FC0; 
+color:#000;
+padding:3px;
+}
+.listTable tr:hover{
+background-color:#F9F0E8; 
+}
+.listTable tr{
+margin:4px;
+}
+
+
+
+
+.style2 {color: #FFFFFF}
+.style4 {
+	color: #CCFF66;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+.style1 {
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+}
+.border td{  border-bottom:1px solid #bebebe; border-left:1px solid #bebebe; text-align:left; padding-left:5px;}
+.borderTitle td{  border-bottom:1px solid #bebebe; border-left:1px solid #bebebe; text-align:center; height:20px;}
+.headertext1{background:#0099FF; white-space:775px; height:25px;}
+.middle1{width:700px;}
+.listTable{ border-top:1px solid #bebebe; border-right:1px solid #bebebe; width:100%;}
+.statusDD{ height:17px; margin-top:2px; margin-bottom:2px; font-size:10px; border:none;}
+.formsection{
+background:#FCF3E2;
+margin:10px;
+padding:10px;
+}
+.cFielSet{}
+.cLegend{ color:#FF0000; font-weight:bold;}
+.cLegendOSL{ color:#666666; font-weight:bold;}
+.formClass tr>td{ border-top:0px; border-right:0px ;border-bottom:0px; border-left:0px ; text-align:left; padding-left:5px;}
+.leftnavigation{ display:none;}
+.actionLink{ width:80px;}
+.iButton{
+background:#CCCCCC;
+color:#333333;
+font-weight:bold;
+font-size:12px;
+}
+.listHeader
+{
+color:#FF0000; font-size:14px; font-weight:700;
+}
+
+/* added by mizanur end */
+
+
+
+
+

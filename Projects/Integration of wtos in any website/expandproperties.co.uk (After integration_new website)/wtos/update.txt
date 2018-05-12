@@ -1,0 +1,19 @@
+6-12-2013
+ALTER TABLE `propertyimage` CHANGE `printOrder` `printOrder` INT( 10 ) NOT NULL DEFAULT '1'
+ALTER TABLE `property` ADD `printStyle` VARCHAR( 255 ) NOT NULL ,
+ADD `bulletText1` VARCHAR( 255 ) NOT NULL ,
+ADD `bulletText2` VARCHAR( 255 ) NOT NULL ,
+ADD `bulletText3` VARCHAR( 255 ) NOT NULL ,
+ADD `bulletText4` VARCHAR( 255 ) NOT NULL ,
+ADD `bulletText5` VARCHAR( 255 ) NOT NULL 
+
+
+ALTER TABLE `property` ADD `sofa` INT( 2 ) NOT NULL 
+
+
+
+
+ALTER TABLE `rents` ADD `Arrears` INT( 5 ) NOT NULL AFTER `amount` ,
+ADD `TotalPayble` INT( 5 ) NOT NULL AFTER `Arrears` ,
+ADD `ReceivedAmount` INT( 5 ) NOT NULL AFTER `TotalPayble` ,
+ADD `Due` INT( 5 ) NOT NULL AFTER `ReceivedAmount` 

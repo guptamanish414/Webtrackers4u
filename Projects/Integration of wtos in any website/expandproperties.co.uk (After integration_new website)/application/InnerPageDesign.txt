@@ -1,0 +1,38 @@
+<div class="container">
+        <p>To be the agent of choice for anyone considering a property related transaction by being the best in our profession. We provide an outstanding level of service to our clients, making moving an easy seamless and pleasurable experience. This is delivered by making clients feels special and by providing a full range of services.</p>
+        <p>We believe in clients for life and will stay in contact with clients long after their transaction has concluded so we remain the agent of choice. 50% of our business will come from recommendations and referrals by delivering exceptional service and simply asking for the business.</p>
+        <p><strong>OUR CLIENTS</strong> &ndash; are the most important part of our business. Our main focus is to deliver outstanding service, making moving an easy, seamless &amp; pleasurable experience.</p>
+        <p><strong>OUR TEAM </strong>&ndash; is our most valuable asset and we work together in an atmosphere of fun and respect. We support each other to deliver exceptional customer care and achieve our personal goals.</p>
+        <p><strong>OUR BUSINESS </strong>&ndash; provides a one-stop service for all property related matters. Our business is built on 7 strong principles and we have a shared vision to be the best in our profession both in terms of service and results.</p>
+        
+        <img alt="" src="<? echo $site['site']; ?>wtos-images/ienei6.png" class="pull-right" />
+        
+        <ul>
+        <li>INTEGRITY</li>
+        <li>TEAMWORK</li>
+        <li>PASSION</li>
+        <li>PROFESSIONALISM</li>
+        <li>FUN</li>
+        <li>CARING</li>
+        <li>INDUSTRIOUS</li>
+        </ul>
+        
+        <div class="clearfix"></div>
+        
+        
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         <img alt="" src="<? echo $site['site']; ?>wtos-images/ienei6.png" class="pull-left" />
+         <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        
+        
+        
+        
+
+    </div>
